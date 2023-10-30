@@ -1,8 +1,8 @@
 # This file is subject to the terms and conditions defined in
 # file 'LICENSE.md', which is part of this source code package.
 
-name=SparkFun Apollo3
-version=2.0.0
+name=Sapphire Circuits Apollo3 Plus
+version=1.0.0
 
 # paths
 cores.path={runtime.platform.path}/cores
@@ -24,14 +24,14 @@ defines.ld={defines.all} "@{build.variant.path}/mbed/.ld-symbols"
 includes.core={includes} "-I{cores.path}/arduino" "-I{cores.path}/arduino/mbed-bridge" "-I{cores.path}/arduino/mbed-bridge/core-api" "-I{cores.path}/arduino/mbed-bridge/core-api/api/deprecated"
 includes.mbed="@{build.variant.path}/mbed/.includes" 
 includes.variant={build.includes}
-includes.extra=
+includes.extra="-I{cores.path}/mbed-os/targets/TARGET_Ambiq_Micro/TARGET_Apollo3p/TARGET_SC_ARTEMIS_ATP_PLUS/bsp" "-I{cores.path}/mbed-os/targets/TARGET_Ambiq_Micro/TARGET_Apollo3p/TARGET_SC_ARTEMIS_ATP_PLUS" "-I{cores.path}/mbed-os/targets/TARGET_Ambiq_Micro/TARGET_Apollo3p/device" "-I{cores.path}/mbed-os/targets/TARGET_Ambiq_Micro/TARGET_Apollo3p/sdk/mcu/apollo3p/" "-I{cores.path}/mbed-os/targets/TARGET_Ambiq_Micro/TARGET_Apollo3p/sdk/CMSIS/AmbiqMicro/Include/" "-I{cores.path}/mbed-os/targets/TARGET_Ambiq_Micro/TARGET_Apollo3p/sdk/mcu/apollo3p/hal/"
 includes.all={includes.core} {includes.mbed} {includes.variant} {includes.extra}
 
 # libraries
 libs.core=-Wl,--whole-archive "{archive_file_path}" -Wl,--no-whole-archive
 libs.mbed=-Wl,--whole-archive "{build.variant.path}/mbed/libmbed-os.a" -Wl,--no-whole-archive
 libs.variant={build.libs}
-libs.extra=-Wl,--whole-archive "{cores.path}/mbed-os/targets/TARGET_Ambiq_Micro/TARGET_Apollo3/sdk/CMSIS/ARM/Lib/ARM/libarm_cortexM4lf_math.a" -Wl,--no-whole-archive
+libs.extra=-Wl,--whole-archive "{cores.path}/mbed-os/targets/TARGET_Ambiq_Micro/TARGET_Apollo3p/sdk/CMSIS/ARM/Lib/ARM/libarm_cortexM4lf_math.a" -Wl,--no-whole-archive
 libs.all={libs.core} {libs.mbed} {libs.variant} {libs.extra}
 
 # warnings

@@ -24,7 +24,9 @@ unsigned long indexPulseIn(pin_size_t index, uint8_t state, unsigned long timeou
     // Enable FastGPIO
     am_hal_gpio_fastgpio_disable(pinNumber);
     am_hal_gpio_fastgpio_clr(pinNumber);
-    am_hal_gpio_fast_pinconfig((uint64_t)0x1 << pinNumber, g_AM_HAL_GPIO_OUTPUT_WITH_READ, 0);
+    AM_HAL_GPIO_MASKCREATE(GpioMask); //3p
+    AM_HAL_GPIO_MASKBIT(pGpioMask, pinNumber);//3p
+    am_hal_gpio_fast_pinconfig(pGpioMask, g_AM_HAL_GPIO_OUTPUT_WITH_READ, 0);
 
     uint32_t t_start = micros();
     uint32_t t_stop = 0;

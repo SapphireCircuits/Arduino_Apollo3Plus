@@ -1,6 +1,6 @@
 {
-    "name": "framework-arduinoapollo3",
-    "description": "An mbed-os enabled Arduino core for Ambiq Apollo3 based boards",
-    "version": "2.2.1",
-    "url": "https://github.com/sparkfun/Arduino_Apollo3"
+    "name": "framework-arduinoapollo3plus",
+    "description": "An mbed-os enabled Arduino core for Ambiq Apollo3 Plus based boards",
+    "version": "1.0.0",
+    "url": "https://github.com/SapphireCircuits/Arduino_Apollo3Plus"
 }
