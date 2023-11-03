@@ -1,6 +1,6 @@
 [submodule "cores/mbed-os"]
 	path = cores/mbed-os
-	url = https://github.com/sparkfun/mbed-os-ambiq-apollo3
+	url = https://github.com/SapphireCircuits/mbed-os-ambiq-apollo3plus
 	branch = ambiq-apollo3-arduino
 [submodule "cores/arduino/mbed-bridge"]
 	path = cores/arduino/mbed-bridge
@@ -10,7 +10,7 @@
 	url = https://github.com/sparkfun/Keyword_File_Generator
 [submodule "tools/uploaders/svl"]
 	path = tools/uploaders/svl
-	url = https://github.com/sparkfun/Apollo3_Uploader_SVL
+	url = https://github.com/SapphireCircuits/Apollo3Plus_Uploader_SVL
 [submodule "tools/uploaders/asb"]
 	path = tools/uploaders/asb
-	url = https://github.com/sparkfun/Apollo3_Uploader_ASB
+	url = https://github.com/SapphireCircuits/Apollo3Plus_Uploader_ASB
