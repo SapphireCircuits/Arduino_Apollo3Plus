@@ -5,6 +5,6 @@ Arduino core to support the Apollo3 Blue Plus microcontroller from Ambiq Micro. 
 ## Installation
 ### **Arduino Boards Manager**
   - Copy / paste the JSON package URL into the 'Additional Boards Manager URLs' field in Arduino preferences
-    ```https://raw.githubusercontent.com/SapphireCircuits/Arduino_Apollo3/main/package_SapphireCircuits_apollo3_plus_index.json```
-    [https://raw.githubusercontent.com/SapphireCircuits/Arduino_Apollo3/main/package_SapphireCircuits_apollo3_plus_index.json](https://raw.githubusercontent.com/SapphireCircuits/Arduino_Apollo3/main/package_SapphireCircuits_apollo3_plus_index.json)
+    ```https://github.com/SapphireCircuits/Arduino_Apollo3Plus/releases/download/v1.0.0/Arduino_Apollo3_plus.tar.gz```
+    [https://github.com/SapphireCircuits/Arduino_Apollo3Plus/releases/download/v1.0.0/Arduino_Apollo3_plus.tar.gz](https://github.com/SapphireCircuits/Arduino_Apollo3Plus/releases/download/v1.0.0/Arduino_Apollo3_plus.tar.gz)
   - Open 'Boards Manager' and select 'Sapphire Circuits Apollo3 Plus Boards' - install the latest version
